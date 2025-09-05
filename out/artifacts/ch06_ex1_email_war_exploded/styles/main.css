@@ -1,0 +1,106 @@
+/* Reset & body */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(120deg, #89f7fe, #66a6ff);
+    color: #333;
+}
+
+/* Container */
+.container {
+    max-width: 500px;
+    margin: 60px auto;
+    background: white;
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+}
+
+/* Titles */
+h1 {
+    text-align: center;
+    font-size: 26px;
+    color: #444;
+    margin-bottom: 25px;
+}
+p {
+    margin: 10px 0;
+}
+.error {
+    color: red;
+    text-align: center;
+}
+
+/* Labels & inputs */
+label {
+    display: block;
+    font-weight: bold;
+    margin-top: 15px;
+}
+input[type="text"], input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    transition: border-color 0.3s;
+}
+input[type="text"]:focus, input[type="email"]:focus {
+    border-color: #66a6ff;
+    outline: none;
+}
+
+/* Buttons */
+.btn, input[type="submit"] {
+    margin-top: 25px;
+    width: 100%;
+    padding: 12px;
+    background: #66a6ff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+.btn:hover, input[type="submit"]:hover {
+    background: #4e8ef7;
+}
+
+/* Info block on thanks.jsp */
+.info {
+    text-align: left;
+    margin: 20px 0;
+}
+.info label {
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+/* Footer */
+footer {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 13px;
+    color: #555;
+}
+/* Gradient animated title */
+h1 {
+    font-size: 26px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 25px;
+    background: linear-gradient(270deg, #ff6ec4, #7873f5, #4ade80, #facc15);
+    background-size: 800% 800%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientMove 8s ease infinite;
+}
+
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}

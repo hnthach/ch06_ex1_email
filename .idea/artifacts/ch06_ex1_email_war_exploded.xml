@@ -1,0 +1,16 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="ch06_ex1_email:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/ch06_ex1_email_war_exploded</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="ch06_ex1_email" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="ch06_ex1_email/web/Web" />
+      <element id="module-source" name="ch06_ex1_email" />
+      <element id="dir-copy" path="$PROJECT_DIR$/web/web" />
+      <element id="dir-copy" path="$PROJECT_DIR$/web/styles" />
+    </root>
+  </artifact>
+</component>
