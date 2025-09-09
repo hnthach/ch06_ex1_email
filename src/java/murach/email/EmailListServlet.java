@@ -1,5 +1,5 @@
 package murach.email;
-
+import java.time.Year;
 import java.io.*;
 import javax.servlet.*;
 import javax.servlet.http.*;
@@ -64,6 +64,9 @@ public class EmailListServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request,
                          HttpServletResponse response)
             throws ServletException, IOException {
+        // bên trong doPost hoặc doGet
+        int currentYear = Year.now().getValue();
+        request.setAttribute("currentYear", currentYear);
         doPost(request, response);
     }
 }
