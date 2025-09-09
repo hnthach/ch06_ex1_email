@@ -1,3 +1,3 @@
-<p>&copy; Copyright ${currentYear} Mike Murach &amp; Associates</p>
-</body>
-</html>
+<footer>
+    Murach Books © ${currentYear}. Murach’s Java JSP Project
+</footer>
